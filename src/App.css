@@ -45,15 +45,7 @@ body {
   outline: none;
 }
 
-/* Change border color when input is focused */
-.input-div input:focus {
- 
-  
-}
 
-
-
-/* Rest of the styles for Navbar and Footer... */
 
 /* ... Previous styles ... */
 
@@ -121,6 +113,20 @@ body {
   display : flex;
   flex: 1;
 }
+.input-div .phone-input{
+  flex : 1;
+}
+.section2 .filler {
+  flex:1;
+}
+.react-tel-input {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.section2 .react-tel-input .form-control {
+  border: 2px solid #ccc;
+  height: 40px;
+}
 .section2 input {
   flex: 1;
   margin: 10px; /* Remove margin to prevent extra divs */
@@ -130,15 +136,15 @@ body {
   color: #000000;
 }
 
-.section2 .phone-number{
+/* .section2 .phone-number{
   flex-grow: 0;
   flex-basis: auto;
   width: 200px;
-}
+} */
 
-.input-div:last-child {
+/* .input-div:last-child {
   margin-right: 0;
-}
+} */
 
 .error-message {
   color: red;
@@ -158,42 +164,67 @@ body {
 /* Rest of your styles... */
 
 /* Styling for PDF Uploader */
-.pdf-uploader {
-  text-align: center;
-  padding: 20px;
+/* Rest of the styles... */
+
+/* Styling for the PDF uploader */
+/* .upload-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border: 2px dashed #3498db;
   border-radius: 5px;
+  padding: 20px;
+  text-align: center;
   cursor: pointer;
-}
+} */
 
 .upload-icon {
-  font-size: 40px;
+  font-size: 36px;
   margin-bottom: 10px;
 }
 
-.upload-icon:before {
-  content: "📁";
+.upload-box p {
+  margin: 0;
+}
+.uploader {
+  display : flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* Styling for the uploaded files */
+.uploaded-files {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
 
-.pdf-uploader p {
-  color: #3498db;
-}
-
-/* Styling for PDF Files */
 .pdf-file {
-  border: 2px solid;
+  border: 2px solid #3498db;
   padding: 10px;
-  margin: 10px 0;
-  display: inline-block;
-  width: calc(33.33% - 10px); /* 3 files horizontally */
   margin-right: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
+  width: calc(33.33% - 10px); /* 3 files horizontally */
 }
 
-.pdf-file.invalid {
-  border-color: red;
+.pdf-file p {
+  margin: 10px 0;
 }
+
+.pdf-file:nth-child(3n) {
+  margin-right: 0;
+}
+
+/* Display in 2-row format */
+.uploaded-files .pdf-file:nth-child(3n) {
+  clear: both;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
 
 .pdf-file p {
   margin: 10px 0;
@@ -206,7 +237,7 @@ body {
 
 /* Styling for the upload text */
 .upload-text {
-  margin-top: 20px;
+  margin-left: 20px;
   padding: 10px;
   background: #f1f1f1;
   border: 1px solid #ddd;
@@ -218,7 +249,9 @@ body {
   margin: 10px 0;
   color: black;
 }
-
+.pdf-uploader {
+  flex:1;
+}
 /* Rest of your styles... */
 
 .section4 {
@@ -263,6 +296,20 @@ button {
 button:hover {
   background-color: #2980b9;
 }
+button.remove-button {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 200px
+}
+
+button.remove-button:hover {
+  background-color: grey;
+}
 
 /* ... Rest of the styles ... */
 /* ... Previous styles ... */
@@ -274,11 +321,21 @@ button:hover {
   margin-top: 20px;
 }
 
-label {
+/* label {
   display: flex;
   align-items: center;
+  border : black;
+} */
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px dashed #3498db;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
 }
-
 input[type="checkbox"] {
   margin-right: 10px;
 }

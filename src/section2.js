@@ -63,6 +63,7 @@ function Section2() {
 
       <div className="input-div">
         <PhoneInput
+          className="phone-input"
           country={'sg'}
           placeholder="Phone Number"
           value={phone}
@@ -70,7 +71,9 @@ function Section2() {
             setPhone(value);
             validatePhone(value);
           }}
+         
         />
+        <div className='filler'></div>
         <p className="error-message">{phoneError}</p>
       </div>
     </div>
