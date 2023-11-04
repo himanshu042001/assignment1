@@ -1,38 +1,357 @@
-.App {
+body {
+  padding: 30px;
+}
+
+
+/* Gradient background for headlines */
+.header { 
+  display: flex;
+  flex-direction: column;
+}
+
+.gradient-background {
+  flex:1;
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: black;
+  padding: 0;
+  height: 1rem; /* Adjust the height as per your preference */
+}
+
+/* Rest of the styles... */
+
+
+/* Rest of the styles... */
+
+
+.navbar, .footer {
+  background: linear-gradient(135deg, #3498db, #9b59b6);
+}
+
+/* Text color for headlines */
+.header h1 {
+
+  -webkit-background-clip: text;
+  flex-direction: column;
+}
+
+/* Styling for input divs */
+.input {
+  /* margin: 10px 0; */
+  border: 2px solid #000000;
+  border-radius: 0px;
+  padding: 10px;
+  border: 2px solid red;
+  outline: none;
+}
+
+/* Change border color when input is focused */
+.input-div input:focus {
+ 
+  
+}
+
+
+
+/* Rest of the styles for Navbar and Footer... */
+
+/* ... Previous styles ... */
+
+/* Rest of the styles for Navbar and Footer */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 10px 20px;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.footer {
+  color: rgb(248, 243, 243);
+  padding: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.section {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: space-between; /* Center horizontally */
+  margin-bottom: 20;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Style for the input fields */
+.section input {
+  margin: 10px; /* Remove margin to prevent extra divs */
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  color: #000000;
+  flex : 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+
+
+
+
+
+/* Rest of the styles... */
+
+/* ... Previous styles ... */
+
+.section2 {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  margin: 20px 0;
+  color: black;
+  flex-direction: column;
+}
+.section2 .input-div{
+  display : flex;
+  flex: 1;
+}
+.section2 input {
+  flex: 1;
+  margin: 10px; /* Remove margin to prevent extra divs */
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  color: #000000;
+}
+
+.section2 .phone-number{
+  flex-grow: 0;
+  flex-basis: auto;
+  width: 200px;
+}
+
+.input-div:last-child {
+  margin-right: 0;
+}
+
+.error-message {
+  color: red;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  font-size: 12px;
+}
+
+.section3 {
   display: flex;
   flex-direction: column;
+  margin: 20px 0;
+  color: black;
+}
+
+/* Rest of your styles... */
+
+/* Styling for PDF Uploader */
+.pdf-uploader {
+  text-align: center;
+  padding: 20px;
+  border: 2px dashed #3498db;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.upload-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.upload-icon:before {
+  content: "📁";
+}
+
+.pdf-uploader p {
+  color: #3498db;
+}
+
+/* Styling for PDF Files */
+.pdf-file {
+  border: 2px solid;
+  padding: 10px;
+  margin: 10px 0;
+  display: inline-block;
+  width: calc(33.33% - 10px); /* 3 files horizontally */
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.pdf-file.invalid {
+  border-color: red;
+}
+
+.pdf-file p {
+  margin: 10px 0;
+}
+
+.pdf-file:nth-child(3n) {
+  margin-right: 0;
+  flex: 1;
+}
+
+/* Styling for the upload text */
+.upload-text {
+  margin-top: 20px;
+  padding: 10px;
+  background: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.upload-text p {
+  margin: 10px 0;
+  color: black;
+}
+
+/* Rest of your styles... */
+
+.section4 {
+  margin-top: 20px;
+  color: rgb(248, 243, 243);
+}
+
+.agreement {
+  background: #f1f1f1;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.agreement ul {
+  list-style: disc;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.agreement a {
+  text-decoration: none;
+  color: #3498db;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* ... Rest of the styles ... */
+/* ... Previous styles ... */
+
+.checkbox-and-button {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 20px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button.disabled {
+  background-color: #ccc;
+  color: #888;
+  cursor: not-allowed;
+}
+
+button.enabled {
+  background-color: #3498db;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button.enabled:hover {
+  background-color: #2980b9;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.section4 {
+  margin-top: 20px;
+  color: black;
 }
+
+.agreement {
+  background: #f1f1f1;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.agreement ul {
+  list-style: disc;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.agreement a {
+  text-decoration: none;
+  color: #3498db;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Gradient background for headlines */
+
+
+/* Rest of the styles... */
+
+
