@@ -58,7 +58,7 @@ function Section3() {
         <div className="pdf-uploader">
           <label htmlFor="fileInput">
             <div className="upload-box">
-              <i className="upload-icon">▶️</i>
+              <i className="upload-icon">📁</i>
               <p>Click to upload or drag and drop Bank Statements</p>
             </div>
           </label>
