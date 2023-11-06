@@ -45,7 +45,7 @@ function Section2() {
         <input
           type="text"
           placeholder="Full Name"
-          value={state.companyData.fullname}
+          // value={state.companyData.fullname}
           onChange={(e) => {
             dispatch({
               type: 'UPDATE_COMPANY_DATA',
@@ -56,7 +56,7 @@ function Section2() {
         <input
           type="text"
           placeholder="Position with Company"
-          value={state.companyData.position}
+          // value={state.companyData.position}
           onChange={(e) => {
             dispatch({
               type: 'UPDATE_COMPANY_DATA',
@@ -70,7 +70,7 @@ function Section2() {
         <input
           type="email"
           placeholder="Email ID"
-          value={state.companyData.email}
+          // value={state.companyData.email}
           onChange={(e) => {
             validateEmail(e.target.value);
           }}
